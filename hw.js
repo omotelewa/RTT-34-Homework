@@ -27,9 +27,22 @@
     grades(45)
 */
 
-/* 2.   Write a function that prints out multiples of 10 up to a given input (argument)
+/* 2.   Define a function, as a function expression, maxOfThreethat takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
 */
-   
+   const maxOThreeThat = function (a,b,c){
+    let max = b;
+
+    if(a > max){
+        max = a;
+    }
+    if(c > max){
+        max = c;
+    }
+    return max;
+   };
+   //const result = maxOThreeThat(16, 78, 2);
+   console.log(16, 78, 2 )
+
 
 /* function multipleNumOfTens(input) {
  for (let number = 1; number <= input; number++) {
@@ -67,7 +80,18 @@ while (exchange > 0) {
         
     }
 }
+//4. Define a function, as a function expression, sumArraythat takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
 
+let sumArray = function(arr){
+    let sum = 0;
+    for(let i=0; i < arr.length; i++){
+    sum += arr[i]
+}
+return sum;
+};
+let numbers = [19, 5, 3];
+let result = sumArray(numbers);
+console.log(result);
 
 /* 5.   Write a program that uses console.log to print all the numbers from 1 to 100 with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
 */
