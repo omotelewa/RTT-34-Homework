@@ -1,10 +1,38 @@
+class Hamster{
+    constructor(name, age){
+        this.owner = "";
+        this.name = "";
+        this.prie = 25;
+}
+
+jennySqueak(){
+    console.log("Sqeak sqeak");
+}
+sleepsALot(){
+    console.log("sleeps");
+}
+
+nibbles(){
+    console.log("nibbles food");
+}
+
+getPrice(){
+    return this.getPrice
+}
+}
+let cuteHamster = new Hamster();
+cuteHamster.setName("cutieHamster");
+console.log(cuteHamster);
+
+
+
 class Person {
     constructor(name) {
         this.name = name;
-        this.age = 0;
-        this.height = 0;
-        this.weight = 0;
-        this.mood = 0;
+        this.gender = gender
+        this.age = age;
+        this.hobby = hobby;
+        this.action = action;
         this.hamsters = [];
         this.bankAccount = 0;
     }
@@ -13,15 +41,22 @@ class Person {
         return this.name;
     }
 
-    getAge(){
-        return this.age;
+    getGender(){
+        return this.gender;
         
         }
-    getWeight(){
-        return this.weight;
+    getAge(){
+        return this.Age;
     }
-    greet() {
-        console.log(`Hello, How are you, ${this.name}!`);
+    getHobby() {
+        return this.Hobby;
+    }
+
+    getAction(){
+            return this.Age;
+        }
+        greeting() {
+        console.log(`Hi there!, How is your day, ${this.name}!`);
     }
 
     eat(){
